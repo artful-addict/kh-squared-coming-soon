@@ -16,7 +16,7 @@ var imagemin = require('gulp-imagemin');
 
 var cache = require('gulp-cache');
 
-var del == require('del');
+var del = require('del');
 
 var runSequence = require('run-sequence');
 
@@ -63,16 +63,4 @@ gulp.task('clean:dist', function(){
   return del.sync('dist');
 }); // run 'gulp clean:dist'
 
-gulp.task('build', function(callback){
-  runSequence('clean:dist',
-    ['sass', 'useref', 'fonts'],
-    callback
-  )
-});
-
-gulp.task('default', function(callback){
-  runSequence('clean:dist',
-    ['sass', 'browserSync', 'watch'],
-    callback
-  )
-})
+gulp.task('build', ['sass', 'browserSync','useref']);
