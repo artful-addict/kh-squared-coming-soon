@@ -1,0 +1,39 @@
+//// Componenets [buttons]
+
+/// Variables
+$button-padding: 0.5rem 1rem;   
+$font-size: 12px;               // 1 factor below base 16px modular typescale
+$button-bgcolor: #;             // the primary brand color
+$button-border-width: 1px;      // border width for all form inputs
+$button-color-hover: #FCFCFC;   // the light/white brand color
+
+/// Mixins
+@mixin kh-button-theme($color, $bgcolor, $color-text-hover: lighten($color, 20%), $bgcolor-hover: lighten($bgcolor, 20%)){
+  color: $color;
+  border-color: $bgcolor;
+  background-color: $bgcolor;
+
+  &:hover {
+    color: $color-text-hover;
+    background-color: $bgcolor-hover;
+  }
+}
+
+/// Structure
+%button {
+  display: inline-block;
+  padding: $button-padding;
+  font-size: $font-size;
+  font-weight: bold;
+  border-width: $button-border-width;
+  border-style: solid;
+}
+
+/// Exported Selectors
+.btn {
+  @extend %button;
+
+  &.subscribe {
+    @include kh-button-theme($button-color-hover, blue, $button-color-hover, blue);
+  }
+}
