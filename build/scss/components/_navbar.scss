@@ -1,0 +1,15 @@
+@mixin coming-soon-theme($bgcolor, $color){
+  background-color: $bgcolor;
+  color: $color;
+}
+
+%navbar {
+  height: 46px;
+  width: 100%;
+  display: block;
+}
+
+#navbar {
+  @extend %navbar;
+  @include coming-soon-theme(rgba(black, .35), white);
+}

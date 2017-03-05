@@ -1,0 +1,28 @@
+@mixin coming-soon-theme($bgcolor, $color) {
+  background-color: $bgcolor;
+  color: $color;
+}
+
+%sticky-footer {
+  height: 46px;
+}
+
+%footer-copyright-row {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+%copyright {
+  margin-top: 13px;
+}
+
+#footer {
+  @extend %sticky-footer;
+  @extend %footer-copyright-row;
+  @include coming-soon-theme(rgba(black, .35), white);
+
+  .copyright {
+    @extend %copyright;
+  }
+}

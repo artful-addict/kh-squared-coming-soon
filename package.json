@@ -1,38 +1,48 @@
 {
-  "name": "kh-squared-coming-soon",
+  "name": "website-starter-kit",
   "version": "1.0.0",
-  "description": "KH Squared Coming Soon Page",
+  "description": "Website starter kit containing Bootstrap 3, Compass Sass, Gulp, and other dev dependencies.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artful-addict/kh-squared-coming-soon.git"
+    "url": "git+https://github.com/artful-addict/website-starter-kit.git"
   },
   "keywords": [
-    "coming",
-    "soon",
-    "kh",
-    "squared",
-    "business",
-    "consulting"
+    "bootstrap",
+    "3",
+    "bootstrap",
+    "twitter",
+    "bootstrap",
+    "gulpjs",
+    "gulp",
+    "rwd",
+    "responsive",
+    "web",
+    "design",
+    "starter",
+    "kit"
   ],
   "author": "Kevin Akins",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/artful-addict/kh-squared-coming-soon/issues"
+    "url": "https://github.com/artful-addict/website-starter-kit/issues"
   },
-  "homepage": "https://github.com/artful-addict/kh-squared-coming-soon#readme",
+  "homepage": "https://github.com/artful-addict/website-starter-kit#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.5",
+    "gulp-compass": "^2.1.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.1",
     "gulp-useref": "^3.1.2",
+    "lite-server": "^2.2.2",
+    "modularscale-sass": "^2.1.1",
     "run-sequence": "^1.2.2"
   }
 }
